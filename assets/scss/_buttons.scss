@@ -1,0 +1,155 @@
+﻿.svy-btn {
+    border: 1px solid #e4e4e4d1;
+    background-color: $blue;
+    color: white;
+    font-size: $fontSize;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0 !important;
+    line-height: 14px;
+    font-weight: 600;
+    border-radius: $borderRadius;
+    box-sizing: border-box;
+    margin: 0 20px 20px 0;
+    position: relative;
+    top: -2px;
+
+    @include vendorize(transition,.15s all ease);
+    @include vendorize(appearance,none);
+    @include vendorize(box-shadow, 0 $buttonDepth 0 darken($blue, 10));
+
+    &.tiny {
+        padding: 3px 7px;
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    &.small {
+        padding: 5px 10px;
+        font-size: 12px;
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    &.large {
+        padding: 15px 30px;
+    }
+
+    &.expand {
+        display: block;
+        width: 100%;
+    }
+
+    &:hover, &:focus {
+        color: $blue;
+        background-color: white;
+        border-color: darken($blue, 5);
+
+        &:after {
+            box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            display: none;
+        }
+    }
+
+    &:active {
+        background-color: darken($blue, 10);
+        color: white;
+        position: relative;
+        top: $buttonDepth;
+        @include vendorize(box-shadow, none !important);
+        @include vendorize(transition,.15s all ease);
+    }
+
+    &.svy-btn-success {
+        background-color: $green;
+        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($green, 10));
+
+        &:hover, &:focus {
+            color: $green;
+            background-color: white;
+            border-color: darken($green, 5);
+        }
+
+        &:active {
+            background-color: darken($green, 10);
+            color: white;
+        }
+    }
+
+    &.svy-btn-secondary {
+        background-color: $darkBlue;
+        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($darkBlue, 10));
+
+        &:hover, &:focus {
+            color: $darkBlue;
+            background-color: white;
+            border-color: darken($darkBlue, 5);
+        }
+
+        &:active {
+            color: white;
+            background-color: darken($darkBlue, 10);
+        }
+    }
+
+    &.svy-btn-warning {
+        background-color: $yellow;
+        color: black;
+        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($yellow, 4));
+
+        &:hover, &:focus {
+            color: darken($yellow, 10);
+            background-color: white;
+            border-color: darken($yellow, 2);
+        }
+
+        &:active {
+            color: black;
+            background-color: darken($yellow, 4);
+        }
+    }
+
+    &.svy-btn-error {
+        background-color: $red;
+        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($red, 10));
+
+        &:hover, &:focus {
+            color: $red;
+            background-color: white;
+            border-color: darken($red, 5);
+        }
+
+        &:active {
+            color: white;
+            background-color: darken($red, 10);
+        }
+    }
+
+    .badge {
+        width: 22px;
+        height: 22px;
+        border-radius: 30px;
+        line-height: 19px;
+        padding: 0 7px;
+        margin: 0;
+        vertical-align: middle;
+        color: inherit;
+        background: #ffffff6e;
+        font-size: 12px !important;
+        margin-left: 3px;
+    }
+}

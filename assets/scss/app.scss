@@ -1,0 +1,113 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import "vars";
+@import "mixins";
+@import "normalize";
+@import "servoy";
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+header {
+    height: 100px;
+    background: $grey;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        line-height: 80px;
+        font-weight: 200;
+    }
+}
+
+main {
+    min-height: calc(100vh - 140px);
+    box-sizing: border-box;
+
+    article {
+        padding: 20px;
+        vertical-align: top;
+        font-size: 0;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 30vw;
+        max-width: 100%;
+        min-width: 480px;
+
+        * {
+            font-size: initial;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 28px;
+        }
+
+        h5 {
+            border-top: 1px solid #ccc;
+            padding-top: 6px;
+            margin-top: 26px;
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        &.elements {
+
+
+            &:nth-child(even) {
+                background: $greyLight;
+            }
+        }
+    }
+
+    code {
+        display: block;
+        background: $grey;
+        padding: 10px;
+    }
+}
+
+footer {
+    height: 40px;
+    background: $grey;
+    line-height: 40px;
+
+    p {
+        margin: 0;
+        color: black;
+        font-size: 12px;
+        text-align: center;
+
+        a {
+            font-weight: 500;
+            color: $green;
+        }
+    }
+}
+
+
+/** UI Elements **/
+@import "buttons";
+@import "forms";
+@import "tabs";
+@import "radiogroup";
+@import "responsive";

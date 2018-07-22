@@ -1,0 +1,158 @@
+﻿form {
+    label, button {
+    }
+}
+
+.input-format {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: row wrap;
+
+    &.expand {
+        flex-wrap: wrap;
+
+        *:not(span) {
+            flex-shrink: 0;
+            display: block;
+            width: 100%;
+        }
+
+        input, select {
+            margin: 0 0 20px 0;
+
+            & ~ .svy-btn {
+                margin: 0px 0 20px 0px;
+            }
+        }
+    }
+
+
+
+    label {
+        font-size: $fontSize;
+        font-weight: 500;
+        margin: 0 5px 5px 0;
+        display: inline-block;
+    }
+
+    textarea {
+        background-color: white;
+        color: black;
+        font-size: $fontSize;
+        padding: 10px;
+        text-align: left;
+        display: block;
+        vertical-align: top;
+        outline: 0 !important;
+        line-height: 14px;
+        font-weight: 500;
+        border-radius: $borderRadius;
+        box-sizing: border-box;
+        line-height: 14px;
+        min-width: 250px;
+        max-width: 100%;
+        min-height: 150px;
+        width: 100%;
+        @include vendorize(transition,$animDuration all ease);
+        @include vendorize(appearance,none);
+        height: 40px;
+        border: 2px solid #eee;
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+
+        &.error {
+            border: 2px solid lighten($red, 5);
+        }
+
+        &.warning {
+            border: 2px solid darken($yellow, 2);
+        }
+
+        &:focus {
+            box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
+            @include vendorize(transition,$animDuration all ease);
+            border: 2px solid lighten($blue, 10);
+        }
+    }
+
+    input {
+        &:not([type=button]) {
+            background-color: white;
+            color: black;
+            font-size: $fontSize;
+            padding: 10px;
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+            outline: 0 !important;
+            line-height: 14px;
+            font-weight: 500;
+            border-radius: $borderRadius;
+            box-sizing: border-box;
+            line-height: 14px;
+            min-width: 250px;
+            @include vendorize(transition,$animDuration all ease);
+            @include vendorize(appearance,none);
+            height: 40px;
+            border: 2px solid #eee;
+
+            &.error {
+                border: 2px solid lighten($red, 5);
+            }
+
+            &.warning {
+                border: 2px solid darken($yellow, 2);
+            }
+
+            &:focus {
+                box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
+                @include vendorize(transition,$animDuration all ease);
+                border: 2px solid lighten($blue, 10);
+            }
+        }
+
+        & ~ .svy-btn {
+            margin: 0 0 0 10px;
+        }
+    }
+
+    select {
+        background-color: white;
+        color: black;
+        font-size: $fontSize;
+        padding: 10px;
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        outline: 0 !important;
+        font-weight: 500;
+        border-radius: $borderRadius;
+        box-sizing: border-box;
+        line-height: 14px;
+        min-width: 250px;
+        @include vendorize(transition,$animDuration all ease);
+        @include vendorize(appearance,none);
+        height: 40px;
+        border: 2px solid #eee;
+
+        & ~ .button {
+            margin: 0 0 0 10px;
+        }
+
+        &.error {
+            border: 2px solid lighten($red, 5);
+            color: lighten($red, 5);
+        }
+
+        &.warning {
+            border: 2px solid darken($yellow, 2);
+        }
+
+        &:focus {
+            box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
+            @include vendorize(transition,$animDuration all ease);
+            border: 2px solid lighten($blue, 10);
+        }
+    }
+}

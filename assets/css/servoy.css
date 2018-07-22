@@ -1,0 +1,773 @@
+.dropdown-menu[uib-typeahead-popup] > li > a {
+    min-height: 20px;
+}
+
+.svy-reconnecting {
+    color: red;
+}
+
+.ng-invalid,
+.ng-invalid input {
+    background-color: #f90000;
+}
+
+.svy-overflow-auto {
+    overflow: auto;
+}
+
+.svy-padding-xs {
+    padding: 1px 5px;
+}
+
+.svy-nowrap {
+    white-space: nowrap;
+}
+
+.svy-nomargin {
+    margin: 0px;
+}
+
+.svy-combobox .btn {
+    padding: 1px 5px;
+}
+
+input[type=date] {
+    line-height: normal;
+}
+
+#mktipmsg {
+    display: none;
+    position: absolute;
+}
+
+.ngVerticalBarVisible {
+    width: 0px !important; /*override value from ng-grid css*/
+}
+
+/*align labels for radios and check groups with input element;
+ we should use flexbox instead of useless vertical-align*/
+label.svy-check-radio {
+    display: block;
+}
+
+    label.svy-check-radio input[type="checkbox"],
+    label.svy-check-radio input[type="radio"] {
+        vertical-align: middle;
+        margin: 0px;
+    }
+
+    label.svy-check-radio span {
+        vertical-align: middle;
+    }
+
+label.svy-check {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1px;
+    margin: 0px;
+}
+
+label.svy-radio {
+    padding: 1px;
+    margin: 0px;
+}
+
+label.svy-check span {
+    padding-left: 3px;
+}
+
+div.svy-label-with-focus:focus {
+    border: thin solid black;
+}
+
+.svy-main-window-container {
+    z-index: 0;
+}
+
+.svy-main-window-navigator-container {
+    z-index: 0;
+}
+
+/*BOOTSTRAP WINDOW CUSTOMIZATION*/
+.window .window-body,
+.window .window-header,
+.window .window-footer {
+    overflow: auto;
+    padding: 5px;
+    border: none;
+    margin: 0px;
+}
+
+.window .window-header {
+    cursor: inherit;
+}
+
+.window .window-body {
+    min-width: 0px;
+    min-height: 0px;
+}
+
+.window .window-header .window-title {
+    cursor: move;
+}
+
+.window {
+    -webkit-transform: translate3d(0,0,0); /*TRICK* new layer is created not needing repaints on the layer below it */
+    transform: translate3d(0,0,0);
+    min-width: 0px;
+    min-height: 0px;
+    max-width: 5000px;
+    max-height: 5000px;
+}
+
+.login-window .modal-dialog {
+    width: 300px;
+}
+
+.inherited_element, .override_element {
+    outline: 1px dotted red;
+}
+
+.inherit_size {
+    width: inherit;
+    height: inherit;
+}
+
+/* Side notes for calling out things (bs-callout from documentation)
+-------------------------------------------------- */
+
+/* Base styles (regardless of theme) */
+.bs-callout {
+    margin: 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+
+    .bs-callout h1,
+    .bs-callout h2,
+    .bs-callout h3,
+    .bs-callout h4,
+    .bs-callout h5,
+    .bs-callout h6 {
+        margin-top: 0;
+    }
+
+.bs-callout-danger h1,
+.bs-callout-danger h2,
+.bs-callout-danger h3,
+.bs-callout-danger h4,
+.bs-callout-danger h5,
+.bs-callout-danger h6 {
+    color: #B94A48;
+}
+
+.bs-callout-warning h1,
+.bs-callout-warning h2,
+.bs-callout-warning h3,
+.bs-callout-warning h4,
+.bs-callout-warning h5,
+.bs-callout-warning h6 {
+    color: #C09853;
+}
+
+.bs-callout-info h1,
+.bs-callout-info h2,
+.bs-callout-info h3,
+.bs-callout-info h4,
+.bs-callout-info h5,
+.bs-callout-info h6 {
+    color: #3A87AD;
+}
+
+.bs-callout-success h1,
+.bs-callout-success h2,
+.bs-callout-success h3,
+.bs-callout-success h4,
+.bs-callout-success h5,
+.bs-callout-success h6 {
+    color: #3C763D;
+}
+
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout code,
+.bs-callout .highlight {
+    background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+}
+
+.bs-callout-warning {
+    background-color: #fefbed;
+    border-color: #f1e7bc;
+}
+
+.bs-callout-info {
+    background-color: #f0f7fd;
+    border-color: #d0e3f0;
+}
+
+.bs-callout-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.dropdown-menu[uib-typeahead-popup] {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.ui-select-bootstrap > .ui-select-match {
+    padding: 0px;
+    overflow: hidden;
+}
+
+.ui-select-search {
+    width: 100% !important;
+    height: 100%;
+    padding: 1px 5px;
+}
+
+.ui-select-match > .form-control {
+    height: 100%;
+    line-height: 100%;
+    font-size: 12px;
+    display: block;
+}
+
+.ui-select-match-text {
+    top: 25%;
+    position: relative;
+}
+
+.ui-select-bootstrap .ui-select-choices-row > span {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ui-select-choices-row > span > div {
+    padding-left: 20px;
+}
+
+.ui-select-choices {
+    overflow-x: hidden;
+    min-width: inherit;
+}
+
+.svyPortalGridStyle .form-control[readonly] {
+    cursor: default;
+}
+
+.ui-grid-cell-focus {
+    background-color: transparent;
+}
+
+/* Modal dialog classes
+-------------------------------------------------- */
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000 !important;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+    .modal.fade .modal-dialog {
+        -webkit-transition: -webkit-transform .3s ease-out;
+        -o-transition: -o-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        -webkit-transform: translate(0, -25%);
+        -ms-transform: translate(0, -25%);
+        -o-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+    }
+
+    .modal.in .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-backdrop {
+    height: 100%;
+    opacity: .5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+}
+
+    .modal-backdrop.fade {
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+
+    .modal-backdrop.in {
+        filter: alpha(opacity=50);
+        opacity: .5;
+    }
+
+.modal-header {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+    .modal-header .close {
+        margin-top: -2px;
+    }
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+    .modal-footer .btn + .btn {
+        margin-bottom: 0;
+        margin-left: 5px;
+    }
+
+    .modal-footer .btn-group .btn + .btn {
+        margin-left: -1px;
+    }
+
+    .modal-footer .btn-block + .btn-block {
+        margin-left: 0;
+    }
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+
+    .modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px;
+    }
+}
+
+/* Default buttons (used in login, file upload)
+-------------------------------------------------- */
+
+.svy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.svy-btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+    .svy-btn-primary:hover,
+    .svy-btn-primary:focus,
+    .svy-btn-primary.active {
+        color: #fff;
+        background-color: #286090;
+        border-color: #204d74;
+    }
+
+.svy-btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+    .svy-btn-success:hover,
+    .svy-btn-success:focus,
+    .svy-btn-success.active {
+        color: #fff;
+        background-color: #449d44;
+        border-color: #398439;
+    }
+
+.svy-btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+    .svy-btn-info:hover,
+    .svy-btn-info:focus,
+    .svy-btn-info.active {
+        color: #fff;
+        background-color: #31b0d5;
+        border-color: #269abc;
+    }
+
+.svy-btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+    .svy-btn-danger:hover,
+    .svy-btn-danger:focus,
+    .svy-btn-danger.active {
+        color: #fff;
+        background-color: #c9302c;
+        border-color: #ac2925;
+    }
+
+.svy-btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* File upload classes
+-------------------------------------------------- */
+
+.svy-upload {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.svy-upload-header-txt {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.svy-upload-table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+    .svy-upload-table > thead > tr > th,
+    .svy-upload-table > tbody > tr > th,
+    .svy-upload-table > tfoot > tr > th,
+    .svy-upload-table > thead > tr > td,
+    .svy-upload-table > tbody > tr > td,
+    .svy-upload-table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+    }
+
+    .svy-upload-table > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .svy-upload-table > caption + thead > tr:first-child > th,
+    .svy-upload-table > colgroup + thead > tr:first-child > th,
+    .svy-upload-table > thead:first-child > tr:first-child > th,
+    .svy-upload-table > caption + thead > tr:first-child > td,
+    .svy-upload-table > colgroup + thead > tr:first-child > td,
+    .svy-upload-table > thead:first-child > tr:first-child > td {
+        border-top: 0;
+    }
+
+    .svy-upload-table > tbody + tbody {
+        border-top: 2px solid #ddd;
+    }
+
+/* Login dialog classes
+-------------------------------------------------- */
+
+.svy-login-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.svy-login-text-danger {
+    color: #a94442;
+}
+
+.svy-login-form-group {
+    margin-bottom: 15px;
+}
+
+.svy-login-form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+    .svy-login-form-control:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+    .svy-login-form-control::-moz-placeholder {
+        color: #999;
+        opacity: 1;
+    }
+
+    .svy-login-form-control:-ms-input-placeholder {
+        color: #999;
+    }
+
+    .svy-login-form-control::-webkit-input-placeholder {
+        color: #999;
+    }
+
+.svy-login-fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Dialog classes
+-------------------------------------------------- */
+
+.svy-dialog-close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.svy-dialog * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.svy-progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.svy-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+
+/* Apply the element you want to drag/resize */
+.drsElement {
+    position: absolute;
+    border: 1px solid #333;
+}
+
+/*
+ The main mouse handle that moves the whole element.
+ You can apply to the same tag as drsElement if you want.
+*/
+.drsMoveHandle {
+    height: 20px;
+    background-color: #CCC;
+    border-bottom: 1px solid #666;
+    cursor: move;
+}
+
+/*
+ The DragResize object name is automatically applied to all generated
+ corner resize handles, as well as one of the individual classes below.
+*/
+.dragresize {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    font-size: 1px;
+    background: #EEE;
+    border: 1px solid #333;
+}
+
+/*
+ Individual corner classes - required for resize support.
+ These are based on the object name plus the handle ID.
+*/
+.dragresize-tl {
+    top: -8px;
+    left: -8px;
+    cursor: nw-resize;
+}
+
+.dragresize-tm {
+    top: -8px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: n-resize;
+}
+
+.dragresize-tr {
+    top: -8px;
+    right: -8px;
+    cursor: ne-resize;
+}
+
+.dragresize-ml {
+    top: 50%;
+    margin-top: -4px;
+    left: -8px;
+    cursor: w-resize;
+}
+
+.dragresize-mr {
+    top: 50%;
+    margin-top: -4px;
+    right: -8px;
+    cursor: e-resize;
+}
+
+.dragresize-bl {
+    bottom: -8px;
+    left: -8px;
+    cursor: sw-resize;
+}
+
+.dragresize-bm {
+    bottom: -8px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: s-resize;
+}
+
+.dragresize-br {
+    bottom: -8px;
+    right: -8px;
+    cursor: se-resize;
+}

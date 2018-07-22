@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/servoy.css" rel="stylesheet" />
+    <link href="assets/css/app.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" />
+        <h1>
+            AuroraEHR UI Kit
+        </h1>
+    </header>
+    <main>
+
+        <article class="elements">
+            <h2>Inline buttons</h2>
+            <h5>Buttons</h5>
+            <button class="button svy-btn svy-btn-primary" type="button">I'm normal</button>
+            <button class="button svy-btn secondary" type="button">I'm normal, but secondary</button>
+            <button class="button svy-btn svy-btn-success success" type="button">It's all good!</button>
+            <button class="button svy-btn svy-btn-info warning" type="button">Pay attention here.</button>
+            <button class="button svy-btn svy-btn-danger error" type="button">Houston, we've got a problem!</button>
+
+            <h2>Button sizes</h2>
+            <a class="button tiny" href="#">I'm normal</a>
+            <a class="button small" href="#">I'm normal</a>
+            <a class="button" href="#">I'm normal</a>
+            <a class="button large" href="#">I'm normal</a>
+
+            <a class="button secondary tiny" href="#">I'm normal</a>
+            <a class="button secondary small" href="#">I'm normal</a>
+            <a class="button secondary" href="#">I'm normal</a>
+            <a class="button secondary large" href="#">I'm normal</a>
+
+            <a class="button success tiny" href="#">I'm normal</a>
+            <a class="button success small" href="#">I'm normal</a>
+            <a class="button success" href="#">I'm normal</a>
+            <a class="button success large" href="#">I'm normal</a>
+
+            <a class="button warning tiny" href="#">I'm normal</a>
+            <a class="button warning small" href="#">I'm normal</a>
+            <a class="button warning" href="#">I'm normal</a>
+            <a class="button warning large" href="#">I'm normal</a>
+
+            <a class="button error tiny" href="#">I'm normal</a>
+            <a class="button error small" href="#">I'm normal</a>
+            <a class="button error" href="#">I'm normal</a>
+            <a class="button error large" href="#">I'm normal</a>
+
+        </article>
+
+        <article class="elements">
+            <h2>Form elements</h2>
+
+            <h5>Straight text textarea</h5>
+
+            <div class="input-format">
+               
+                <textarea placeholder="This is a normal textarea"></textarea>
+                <textarea class="warning" placeholder="This is a warning textarea"></textarea>
+                <textarea class="error" placeholder="This is a erroneous textarea"></textarea>
+            </div>
+
+            <h5>Inline text input</h5>
+
+            <div class="input-format">
+                <label>
+                    Input label
+                </label>
+                <input type="text" class="error" placeholder="This is a erroneous input" />
+                <a class="button" href="#">Search</a>
+            </div>
+
+
+
+            <h5>Block text input</h5>
+
+            <div class="input-format expand">
+                <label>
+                    Input label
+                </label>
+                <input type="text" placeholder="This is a placeholder..." />
+                <a class="button success" href="#">Search</a>
+            </div>
+
+
+
+            <h5>Inline Dropdown</h5>
+            <div class="input-format">
+                <label>
+                    Select dropdown
+                </label>
+                <select>
+                    <option value="0">Lorem</option>
+                    <option value="1">Ipsum</option>
+                    <option value="2">Dolor</option>
+                    <option value="3">Sit amet</option>
+                </select>
+                <a class="button warning" href="#">Search</a>
+            </div>
+            <h5>Block Dropdown</h5>
+
+            <div class="input-format expand">
+                <label>
+                    Select dropdown
+                </label>
+                <select>
+                    <option value="0">Lorem</option>
+                    <option value="1">Ipsum</option>
+                    <option value="2">Dolor</option>
+                    <option value="3">Sit amet</option>
+                </select>
+                <a class="button warning" href="#">Search</a>
+            </div>
+        </article>
+        <article class="elements">
+            <h2>Block (expand) buttons</h2>
+            <h5>Buttons</h5>
+            <button class="button expand" type="button">I'm normal</button>
+            <button class="button expand secondary" type="button">I'm normal, but secondary</button>
+            <button class="button expand success" type="button">It's all good!</button>
+            <button class="button expand warning" type="button">Pay attention here.</button>
+            <button class="button expand error" type="button">Houston, we've got a problem!</button>
+
+            <h2>Form control</h2>
+            <form>
+                <div class="input-format expand">
+                    <label>
+                        Username
+                    </label>
+                    <input type="text" placeholder="Username" />
+
+                </div>
+                <div class="input-format expand">
+                    <label>
+                        Enter password
+                    </label>
+                    <input type="password" placeholder="Enter password" />
+
+                </div>
+                <div class="input-format expand">
+                    <label>
+                        Re-enter password
+                    </label>
+                    <input type="password" placeholder="Re-enter password" />
+
+                </div>
+                <div class="input-format expand">
+                    <label>
+                        Email
+                    </label>
+                    <input type="email" placeholder="Email" />
+
+                </div>
+                <button class="button success" type="button">Sign up</button>
+            </form>
+        </article>
+
+        <article class="elements">
+            <h2>Radio group</h2>
+            <ul class="list">
+                <li>
+                    <input type="radio" class="radio-button" name="radios" id="radio-1" />
+                    <label for="radio-1" class="label">Lorem ipsum dolor sit amet</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio-button" name="radios" id="radio-2" />
+                    <label for="radio-2" class="label">Lorem ipsum dolor sit amet</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio-button" name="radios" id="radio-3" />
+                    <label for="radio-3" class="label">Lorem ipsum dolor sit amet</label>
+                </li>
+                <li>
+                    <input type="radio" class="radio-button" name="radios" id="radio-4" />
+                    <label for="radio-4" class="label">Lorem ipsum dolor sit amet</label>
+                </li>
+            </ul>
+        </article>
+        <article class="elements">
+            <h2>Tabs group</h2>
+            <div class="tabs">
+                <div class="tabs-header">
+                    <ul>
+                        <li>
+                            <a href="#" data-content="0" class="active">
+                                First Tab
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-content="1">
+                                Second Tab
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-content="2">
+                                Third Tab
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-content">
+                    <ul>
+                        <li class="active">
+                            <div>
+                                <div id="lipsum">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis lacinia ante, vitae interdum eros molestie rutrum. Curabitur nec sodales magna, nec gravida massa. Fusce purus lacus, tristique nec tempor sit amet, iaculis ut leo. Etiam a elementum mauris. Nunc sed malesuada est, sed pretium nisi. Aliquam erat volutpat. Quisque commodo risus at ex fringilla, pretium dictum nunc gravida. Maecenas vulputate, justo quis dignissim maximus, libero massa ultrices nibh, vel dictum augue enim quis felis. Vivamus dignissim justo sed nulla scelerisque porttitor. Ut imperdiet id sapien at congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac porttitor justo. Fusce risus risus, consectetur at nibh elementum, fringilla pharetra quam. Pellentesque sit amet nisi enim. Vestibulum aliquam molestie lectus id volutpat.
+                                    </p>
+                                    <p>
+                                        Vivamus purus enim, tincidunt eu consequat a, rutrum vel sapien. Ut est odio, placerat ac varius et, auctor vel elit. Nullam id risus dui. Sed semper interdum dolor. Mauris vel faucibus lacus. Aenean augue massa, sagittis nec laoreet quis, condimentum nec ipsum. Suspendisse lobortis iaculis hendrerit. Praesent vestibulum lobortis sem, id vehicula ex lacinia vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div id="lipsum">
+                                    <p>
+                                        Morbi vel justo nec sem faucibus tempus. Sed non sapien tristique, tempor purus a, vulputate leo. Nunc laoreet metus vel turpis molestie rhoncus. Aenean vestibulum tincidunt nisl, id blandit nibh varius ut. Donec hendrerit purus purus, vel dignissim justo pellentesque in. Etiam sit amet orci quis lectus tempor vehicula dapibus ut augue. Nam tincidunt libero vitae ligula fermentum vehicula. Cras vel pretium lorem, vitae faucibus nunc. Pellentesque non finibus elit, sit amet cursus felis. Integer vel urna rutrum dolor condimentum venenatis non non nibh. Integer at ex nulla. Nulla ut nisi ut est pretium tincidunt. Donec condimentum nibh ut odio semper ultrices.
+                                    </p>
+                                    <p>
+                                        Pellentesque id nunc efficitur, laoreet urna vel, rutrum massa. Ut rhoncus augue et ipsum mattis commodo eu vitae urna. Vestibulum tempus lobortis ex vitae pharetra. Aenean id augue vel urna maximus fermentum id sed sem. Quisque vitae pellentesque nisl. Proin imperdiet nisi ut ligula tempus semper. Curabitur dictum, neque posuere sollicitudin lacinia, lacus sem vestibulum turpis, eu viverra risus lectus id urna. Nullam lacus lacus, facilisis vitae lacinia at, tincidunt aliquet lectus. Duis ac viverra lacus. Praesent cursus diam et sapien rutrum, id laoreet lectus fermentum. Phasellus vitae quam sed turpis mollis tincidunt eget quis lectus. Praesent luctus ipsum in faucibus suscipit. Sed vel erat at ex pellentesque dapibus id id enim. Sed tempus, risus eu sodales facilisis, justo ex tristique arcu, ultrices euismod sem augue in ipsum. Integer eu risus sollicitudin, pulvinar libero in, rutrum metus.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div id="lipsum">
+                                    <p>
+                                        Vestibulum a sodales nunc. Donec auctor tempus nulla, sit amet bibendum augue placerat eu. Ut rhoncus ac sapien quis sagittis. Nulla elit mi, bibendum sed dui non, iaculis sodales ligula. Phasellus sit amet gravida risus. Nullam porttitor feugiat massa, vel rhoncus urna aliquet id. Ut rhoncus metus ligula, sed imperdiet libero fermentum pellentesque. Aliquam non elit id diam dignissim viverra nec eu augue. Nulla dapibus a massa ut elementum. Suspendisse tempor nisi pharetra orci ullamcorper, in mollis urna ultrices. Nunc congue, mauris a hendrerit eleifend, nisl purus tincidunt orci, venenatis interdum nunc ante pellentesque lectus. Integer et nulla nunc. Fusce in magna tempor, sagittis augue sit amet, feugiat diam.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <p>Made with ❤ by <a href="https://www.upwork.com/fl/uidoctor" target="_blank">UIDoctor</a></p>
+    </footer>
+</body>
+</html>

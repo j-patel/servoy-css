@@ -1,0 +1,55 @@
+.svy-radiogroup {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    label {
+        position: relative;
+
+        [type='radio'] {
+            position: absolute;
+            visibility: hidden;
+
+            &:checked ~ span {
+                &::before {
+                    margin-right: 10px;
+                    border: 12px solid $green !important;
+                    background: #fff;
+                }
+            }
+        }
+
+        span {
+            padding: 10px 0;
+            color: #333333;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all $animDuration linear;
+            display: inline-block;
+            vertical-align: middle;
+
+
+            &::before {
+                display: inline-block;
+                content: '' !important;
+                font-size: 0;
+                border: 6px solid $blue;
+                border-radius: 50%;
+                height: 24px;
+                width: 24px;
+                margin-right: 10px;
+                transition: all $animDuration linear;
+                vertical-align: middle;
+            }
+        }
+
+        &:hover span {
+
+            &::before {
+                border: 6px solid $green;
+                margin-right: 10px;
+            }
+        }
+    }
+}
