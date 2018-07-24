@@ -3,7 +3,7 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/servoy.css" rel="stylesheet" />
     <link href="assets/css/app.css" rel="stylesheet" />
@@ -218,7 +218,8 @@
                     <option value="2">Dolor</option>
                     <option value="3">Sit amet</option>
                 </select>
-                <a class="button warning" href="#">Search</a>
+
+                <a class="svy-btn svy-btn-primary" href="#">Search</a>
             </div>
             <h5>Block Dropdown</h5>
 
@@ -232,7 +233,7 @@
                     <option value="2">Dolor</option>
                     <option value="3">Sit amet</option>
                 </select>
-                <a class="button warning" href="#">Search</a>
+                <a class="svy-btn svy-btn-primary" href="#">Search</a>
             </div>
         </article>
         <article class="elements">
@@ -398,6 +399,92 @@
                 </div>
             </div>
         </article>
+
+        <article class="elements">
+            <h2>Checkbox group</h2>
+
+            <div ng-style="layout.tabs" class="svy-wrapper">
+                <data-servoydefault-splitpane name="tabs" data-svy-name="galleryContainer.tabs" svy-model="model.tabs" svy-api="api.tabs" svy-handlers="handlers.tabs" svy-servoyapi="handlers.tabs.svy_servoyApi" class="ng-isolate-scope">
+                    <div class="svy-splitpane" sablo-tabseq="model.tabSeq" sablo-tabseq-config="{container: true, reservedGap: 50}" svy-dblclick="handlers.onDoubleClickMethodID($event)">
+                        <div class="split-panes vertical" ng-transclude="" orientation="vertical" on-divider-change="onChange()">
+                            <div class="split-pane1" ng-transclude="" min-size="model.pane1MinSize" tabloadchecker="split1">
+                                <div ng-include="getForm(model.tabs[0])" sablo-tabseq="1" sablo-tabseq-config="{container: true}" class="ng-scope">
+                                    <svy-formload formname="tabPanels_Base" class="ng-scope">
+                                        <div ng-controller="tabPanels_Base" data-svy-name="tabPanels_Base" svy-formstyle="formStyle" svy-layout-update="" svy-form-class-update="" svy-autosave="" svy-scrollbars="formProperties.scrollbars" class="svy-form ng-scope svy-overflow-auto">
+                                            <div ng-style="titleheaderStyle" class="svy-titleheader"></div>
+                                            <div ng-style="bodyStyle" class="svy-body">
+                                                <div ng-style="layout.tabs" class="svy-wrapper">
+                                                    <data-servoydefault-tabpanel name="tabs" data-svy-name="tabPanels_Base.tabs" svy-model="model.tabs" svy-api="api.tabs" svy-handlers="handlers.tabs" svy-servoyapi="handlers.tabs.svy_servoyApi" class="ng-isolate-scope">
+                                                        <div svy-border="model.borderType" svy-font="model.fontType">
+                                                            <div ng-include="getTemplateUrl()" class="ng-scope">
+                                                                <div active="model.activeTabIndex" sablo-tabseq="model.tabSeq" sablo-tabseq-config="{container: true, reservedGap: 50}" class="ng-isolate-scope  svy-tabpanel">
+                                                                    <ul class="nav nav-tabs" ng-transclude="">
+                                                                        <li class="uib-tab nav-item ng-scope ng-isolate-scope active" select="select(tab)" disabled="disabled">
+                                                                            <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">
+                                                                                <uib-tab-heading svy-mnemonic="tab.mnemonic" class="ng-scope">
+                                                                                    <img ng-hide="tab.imageMediaID == ''" class="">
+                                                                                    <span svy-background="model.background" svy-foreground="tab.foreground == null ? model.foreground : tab.foreground" ng-bind="tab.text" class="ng-binding">Customers</span>
+                                                                                </uib-tab-heading>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="uib-tab nav-item ng-scope ng-isolate-scope" select="select(tab)" disabled="disabled">
+                                                                            <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">
+                                                                                <uib-tab-heading svy-mnemonic="tab.mnemonic" class="ng-scope">
+                                                                                    <img ng-hide="tab.imageMediaID == ''" class="">
+                                                                                    <span svy-background="model.background" svy-foreground="tab.foreground == null ? model.foreground : tab.foreground" ng-bind="tab.text" class="ng-binding">Orders</span>
+                                                                                </uib-tab-heading>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="uib-tab nav-item ng-scope ng-isolate-scope" select="select(tab)" disabled="disabled">
+                                                                            <a href="" ng-click="select($event)" class="nav-link ng-binding" uib-tab-heading-transclude="">
+                                                                                <uib-tab-heading svy-mnemonic="tab.mnemonic" class="ng-scope">
+                                                                                    <img ng-hide="tab.imageMediaID == ''" class="">
+                                                                                    <span svy-background="model.background" svy-foreground="tab.foreground == null ? model.foreground : tab.foreground" ng-bind="tab.text" class="ng-binding">Order Details</span>
+                                                                                </uib-tab-heading>
+                                                                            </a>
+                                                                        </li>
+                                                                       
+                                                                    </ul>
+                                                                    <div class="tab-content">
+                                                                        <div class="tab-pane ng-scope active" uib-tab-content-transclude="tab">
+                                                                            <div ng-include="getForm(tab)" sablo-tabseq="1" sablo-tabseq-config="{container: true}" ng-style="getTabsHeight()" class="ng-scope">
+                                                                                <svy-formload formname="tabPanels_tab1" class="ng-scope">
+                                                                                    <div ng-controller="tabPanels_tab1" data-svy-name="tabPanels_tab1" svy-formstyle="formStyle" svy-layout-update="" svy-form-class-update="" svy-autosave="" class="svy-form ng-scope">
+                                                                                        <div ng-style="bodyStyle" class="svy-body">
+                                                                                            <div ng-style="layout.svy_lvp_tabPanels_tab1" class="svy-wrapper">
+                                                                                                <div id="lipsum">
+                                                                                                    <p>
+                                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis lacinia ante, vitae interdum eros molestie rutrum. Curabitur nec sodales magna, nec gravida massa. Fusce purus lacus, tristique nec tempor sit amet, iaculis ut leo. Etiam a elementum mauris. Nunc sed malesuada est, sed pretium nisi. Aliquam erat volutpat. Quisque commodo risus at ex fringilla, pretium dictum nunc gravida. Maecenas vulputate, justo quis dignissim maximus, libero massa ultrices nibh, vel dictum augue enim quis felis. Vivamus dignissim justo sed nulla scelerisque porttitor. Ut imperdiet id sapien at congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac porttitor justo. Fusce risus risus, consectetur at nibh elementum, fringilla pharetra quam. Pellentesque sit amet nisi enim. Vestibulum aliquam molestie lectus id volutpat.
+                                                                                                    </p>
+                                                                                                    <p>
+                                                                                                        Vivamus purus enim, tincidunt eu consequat a, rutrum vel sapien. Ut est odio, placerat ac varius et, auctor vel elit. Nullam id risus dui. Sed semper interdum dolor. Mauris vel faucibus lacus. Aenean augue massa, sagittis nec laoreet quis, condimentum nec ipsum. Suspendisse lobortis iaculis hendrerit. Praesent vestibulum lobortis sem, id vehicula ex lacinia vel.
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </svy-formload>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </data-servoydefault-tabpanel>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </svy-formload>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </data-servoydefault-splitpane>
+            </div>
+
+
+
+        </article>
         <article class="elements">
             <h2>Checkbox group</h2>
             <div ng-style="layout.fldEventsOptions" class="svy-wrapper">
@@ -425,68 +512,6 @@
                 </div>
             </div>
         </article>
-        <article class="elements">
-            <h2>Tabs group</h2>
-            <div class="tabs">
-                <div class="tabs-header">
-                    <ul>
-                        <li>
-                            <a href="#" data-content="0" class="active">
-                                First Tab
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-content="1">
-                                Second Tab
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-content="2">
-                                Third Tab
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tabs-content">
-                    <ul>
-                        <li class="active">
-                            <div>
-                                <div id="lipsum">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis lacinia ante, vitae interdum eros molestie rutrum. Curabitur nec sodales magna, nec gravida massa. Fusce purus lacus, tristique nec tempor sit amet, iaculis ut leo. Etiam a elementum mauris. Nunc sed malesuada est, sed pretium nisi. Aliquam erat volutpat. Quisque commodo risus at ex fringilla, pretium dictum nunc gravida. Maecenas vulputate, justo quis dignissim maximus, libero massa ultrices nibh, vel dictum augue enim quis felis. Vivamus dignissim justo sed nulla scelerisque porttitor. Ut imperdiet id sapien at congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque ac porttitor justo. Fusce risus risus, consectetur at nibh elementum, fringilla pharetra quam. Pellentesque sit amet nisi enim. Vestibulum aliquam molestie lectus id volutpat.
-                                    </p>
-                                    <p>
-                                        Vivamus purus enim, tincidunt eu consequat a, rutrum vel sapien. Ut est odio, placerat ac varius et, auctor vel elit. Nullam id risus dui. Sed semper interdum dolor. Mauris vel faucibus lacus. Aenean augue massa, sagittis nec laoreet quis, condimentum nec ipsum. Suspendisse lobortis iaculis hendrerit. Praesent vestibulum lobortis sem, id vehicula ex lacinia vel.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div id="lipsum">
-                                    <p>
-                                        Morbi vel justo nec sem faucibus tempus. Sed non sapien tristique, tempor purus a, vulputate leo. Nunc laoreet metus vel turpis molestie rhoncus. Aenean vestibulum tincidunt nisl, id blandit nibh varius ut. Donec hendrerit purus purus, vel dignissim justo pellentesque in. Etiam sit amet orci quis lectus tempor vehicula dapibus ut augue. Nam tincidunt libero vitae ligula fermentum vehicula. Cras vel pretium lorem, vitae faucibus nunc. Pellentesque non finibus elit, sit amet cursus felis. Integer vel urna rutrum dolor condimentum venenatis non non nibh. Integer at ex nulla. Nulla ut nisi ut est pretium tincidunt. Donec condimentum nibh ut odio semper ultrices.
-                                    </p>
-                                    <p>
-                                        Pellentesque id nunc efficitur, laoreet urna vel, rutrum massa. Ut rhoncus augue et ipsum mattis commodo eu vitae urna. Vestibulum tempus lobortis ex vitae pharetra. Aenean id augue vel urna maximus fermentum id sed sem. Quisque vitae pellentesque nisl. Proin imperdiet nisi ut ligula tempus semper. Curabitur dictum, neque posuere sollicitudin lacinia, lacus sem vestibulum turpis, eu viverra risus lectus id urna. Nullam lacus lacus, facilisis vitae lacinia at, tincidunt aliquet lectus. Duis ac viverra lacus. Praesent cursus diam et sapien rutrum, id laoreet lectus fermentum. Phasellus vitae quam sed turpis mollis tincidunt eget quis lectus. Praesent luctus ipsum in faucibus suscipit. Sed vel erat at ex pellentesque dapibus id id enim. Sed tempus, risus eu sodales facilisis, justo ex tristique arcu, ultrices euismod sem augue in ipsum. Integer eu risus sollicitudin, pulvinar libero in, rutrum metus.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div id="lipsum">
-                                    <p>
-                                        Vestibulum a sodales nunc. Donec auctor tempus nulla, sit amet bibendum augue placerat eu. Ut rhoncus ac sapien quis sagittis. Nulla elit mi, bibendum sed dui non, iaculis sodales ligula. Phasellus sit amet gravida risus. Nullam porttitor feugiat massa, vel rhoncus urna aliquet id. Ut rhoncus metus ligula, sed imperdiet libero fermentum pellentesque. Aliquam non elit id diam dignissim viverra nec eu augue. Nulla dapibus a massa ut elementum. Suspendisse tempor nisi pharetra orci ullamcorper, in mollis urna ultrices. Nunc congue, mauris a hendrerit eleifend, nisl purus tincidunt orci, venenatis interdum nunc ante pellentesque lectus. Integer et nulla nunc. Fusce in magna tempor, sagittis augue sit amet, feugiat diam.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-
     </main>
     <footer>
         <p>Made with ❤ by <a href="https://www.upwork.com/fl/uidoctor" target="_blank">UIDoctor</a></p>

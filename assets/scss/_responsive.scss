@@ -21,7 +21,7 @@
         }
     }
 
-    .input-format {
+    .svy-wrapper {
         display: flex;
         justify-content: left;
         align-items: center;
@@ -31,6 +31,8 @@
             flex-shrink: 0;
             display: block;
             width: 100%;
+            overflow: auto;
+            height: 100%;
         }
 
         input, select {
@@ -42,52 +44,54 @@
         }
     }
 
-    .tabs {
-        .tabs-content {
+    .svy-tabpanel {
+        .tab-content {
             margin-top: -2px;
         }
     }
 
-    .tabs .tabs-header ul {
+    .svy-tabpanel > ul.nav-tabs {
         list-style: none;
         padding: 0 0 0px 0;
         margin: 0;
         transition: 0.15s all ease;
-    }
 
-    .tabs .tabs-header ul li {
-        display: block;
-        transition: 0.15s all ease;
+        li {
+            display: block;
+            transition: 0.15s all ease;
+            width: 100%;
+            overflow: hidden;
 
-        a {
-            border-radius: 0;
+            a {
+                border-radius: 0;
+
+                &.active {
+                    background-color: #37a5e9;
+                    color: white;
+                    bottom: 0;
+                    -webkit-box-shadow: none !important;
+                    -moz-box-shadow: none !important;
+                    -ms-box-shadow: none !important;
+                    -o-box-shadow: none !important;
+                    box-shadow: none !important;
+                    -webkit-transition: 0.15s all ease;
+                    -moz-transition: 0.15s all ease;
+                    -ms-transition: 0.15s all ease;
+                    -o-transition: 0.15s all ease;
+                    transition: 0.15s all ease;
+                    z-index: 999999;
+                    top: initial;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .tabs-header {
+                    position: relative;
+                    transition: 0.15s all ease;
+                }
+            }
         }
-    }
-
-    .tabs .tabs-header ul li a.active {
-        background-color: #37a5e9;
-        color: white;
-        bottom: 0;
-        -webkit-box-shadow: none !important;
-        -moz-box-shadow: none !important;
-        -ms-box-shadow: none !important;
-        -o-box-shadow: none !important;
-        box-shadow: none !important;
-        -webkit-transition: 0.15s all ease;
-        -moz-transition: 0.15s all ease;
-        -ms-transition: 0.15s all ease;
-        -o-transition: 0.15s all ease;
-        transition: 0.15s all ease;
-        z-index: 999999;
-        top: initial;
-
-        &:before {
-            display: none;
-        }
-    }
-
-    .tabs-header {
-        position: relative;
-        transition: 0.15s all ease;
     }
 }

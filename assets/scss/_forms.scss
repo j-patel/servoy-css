@@ -29,7 +29,7 @@
 
 
 
-    label {
+    label:not(.svy-check-radio) {
         font-size: $fontSize;
         font-weight: 500;
         margin: 0 5px 5px 0;

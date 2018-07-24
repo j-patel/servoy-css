@@ -1,6 +1,7 @@
 .svy-checkgroup {
     margin: 0;
     padding: 0;
+    height: 100%;
 
     label.svy-check-radio {
         position: relative;
@@ -38,7 +39,7 @@
                 height: 24px;
                 width: 24px;
                 margin-right: 10px;
-                transition: all $animDuration linear; 
+                transition: all $animDuration linear;
                 vertical-align: middle;
             }
         }
