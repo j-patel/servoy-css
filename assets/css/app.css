@@ -1387,27 +1387,27 @@ footer {
     font-size: 12px !important;
     margin-left: 3px; }
 
-.input-format {
+.svy-wrapper {
   display: flex;
   justify-content: left;
   align-items: center;
   flex-flow: row wrap; }
-  .input-format.expand {
+  .svy-wrapper.expand {
     flex-wrap: wrap; }
-    .input-format.expand *:not(span) {
+    .svy-wrapper.expand *:not(span) {
       flex-shrink: 0;
       display: block;
       width: 100%; }
-    .input-format.expand input, .input-format.expand select {
+    .svy-wrapper.expand input, .svy-wrapper.expand select {
       margin: 0 0 20px 0; }
-      .input-format.expand input ~ .svy-btn, .input-format.expand select ~ .svy-btn {
+      .svy-wrapper.expand input ~ .svy-btn, .svy-wrapper.expand select ~ .svy-btn {
         margin: 0px 0 20px 0px; }
-  .input-format label {
+  .svy-wrapper label {
     font-size: 14px;
     font-weight: 500;
     margin: 0 5px 5px 0;
     display: inline-block; }
-  .input-format textarea {
+  .svy-wrapper textarea {
     background-color: white;
     color: black;
     font-size: 14px;
@@ -1425,11 +1425,11 @@ footer {
     max-width: 100%;
     min-height: 150px;
     width: 100%;
-    -webkit-transition: 0.2s all ease;
-    -moz-transition: 0.2s all ease;
-    -ms-transition: 0.2s all ease;
-    -o-transition: 0.2s all ease;
-    transition: 0.2s all ease;
+    -webkit-transition: 0.1s all ease;
+    -moz-transition: 0.1s all ease;
+    -ms-transition: 0.1s all ease;
+    -o-transition: 0.1s all ease;
+    transition: 0.1s all ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -1439,19 +1439,19 @@ footer {
     border: 2px solid #eee;
     flex: 0 0 100%;
     margin-bottom: 15px; }
-    .input-format textarea.error {
+    .svy-wrapper textarea.error {
       border: 2px solid #d70000; }
-    .input-format textarea.warning {
+    .svy-wrapper textarea.warning {
       border: 2px solid #e2d100; }
-    .input-format textarea:focus {
+    .svy-wrapper textarea:focus {
       box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
-      -webkit-transition: 0.2s all ease;
-      -moz-transition: 0.2s all ease;
-      -ms-transition: 0.2s all ease;
-      -o-transition: 0.2s all ease;
-      transition: 0.2s all ease;
+      -webkit-transition: 0.1s all ease;
+      -moz-transition: 0.1s all ease;
+      -ms-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
       border: 2px solid #65baee; }
-  .input-format input:not([type=button]) {
+  .svy-wrapper input:not([type=button]) {
     background-color: white;
     color: black;
     font-size: 14px;
@@ -1466,11 +1466,11 @@ footer {
     box-sizing: border-box;
     line-height: 14px;
     min-width: 250px;
-    -webkit-transition: 0.2s all ease;
-    -moz-transition: 0.2s all ease;
-    -ms-transition: 0.2s all ease;
-    -o-transition: 0.2s all ease;
-    transition: 0.2s all ease;
+    -webkit-transition: 0.1s all ease;
+    -moz-transition: 0.1s all ease;
+    -ms-transition: 0.1s all ease;
+    -o-transition: 0.1s all ease;
+    transition: 0.1s all ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -1478,21 +1478,21 @@ footer {
     appearance: none;
     height: 40px;
     border: 2px solid #eee; }
-    .input-format input:not([type=button]).error {
+    .svy-wrapper input:not([type=button]).error {
       border: 2px solid #d70000; }
-    .input-format input:not([type=button]).warning {
+    .svy-wrapper input:not([type=button]).warning {
       border: 2px solid #e2d100; }
-    .input-format input:not([type=button]):focus {
+    .svy-wrapper input:not([type=button]):focus {
       box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
-      -webkit-transition: 0.2s all ease;
-      -moz-transition: 0.2s all ease;
-      -ms-transition: 0.2s all ease;
-      -o-transition: 0.2s all ease;
-      transition: 0.2s all ease;
+      -webkit-transition: 0.1s all ease;
+      -moz-transition: 0.1s all ease;
+      -ms-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
       border: 2px solid #65baee; }
-  .input-format input ~ .svy-btn {
+  .svy-wrapper input ~ .svy-btn {
     margin: 0 0 0 10px; }
-  .input-format select {
+  .svy-wrapper select {
     background-color: white;
     color: black;
     font-size: 14px;
@@ -1506,11 +1506,11 @@ footer {
     box-sizing: border-box;
     line-height: 14px;
     min-width: 250px;
-    -webkit-transition: 0.2s all ease;
-    -moz-transition: 0.2s all ease;
-    -ms-transition: 0.2s all ease;
-    -o-transition: 0.2s all ease;
-    transition: 0.2s all ease;
+    -webkit-transition: 0.1s all ease;
+    -moz-transition: 0.1s all ease;
+    -ms-transition: 0.1s all ease;
+    -o-transition: 0.1s all ease;
+    transition: 0.1s all ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -1518,20 +1518,20 @@ footer {
     appearance: none;
     height: 40px;
     border: 2px solid #eee; }
-    .input-format select ~ .button, .input-format .tabs .tabs-header ul li select ~ a, .tabs .tabs-header ul li .input-format select ~ a {
+    .svy-wrapper select ~ .button, .svy-wrapper .tabs .tabs-header ul li select ~ a, .tabs .tabs-header ul li .svy-wrapper select ~ a {
       margin: 0 0 0 10px; }
-    .input-format select.error {
+    .svy-wrapper select.error {
       border: 2px solid #d70000;
       color: #d70000; }
-    .input-format select.warning {
+    .svy-wrapper select.warning {
       border: 2px solid #e2d100; }
-    .input-format select:focus {
+    .svy-wrapper select:focus {
       box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
-      -webkit-transition: 0.2s all ease;
-      -moz-transition: 0.2s all ease;
-      -ms-transition: 0.2s all ease;
-      -o-transition: 0.2s all ease;
-      transition: 0.2s all ease;
+      -webkit-transition: 0.1s all ease;
+      -moz-transition: 0.1s all ease;
+      -ms-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
       border: 2px solid #65baee; }
 
 .tabs .tabs-header ul {
@@ -1606,7 +1606,6 @@ footer {
         line-height: 20px; }
 
 .svy-radiogroup {
-  list-style: none;
   margin: 0;
   padding: 0; }
   .svy-radiogroup label {
@@ -1624,7 +1623,7 @@ footer {
       font-size: 14px;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s linear;
+      transition: all 0.1s linear;
       display: inline-block;
       vertical-align: middle; }
       .svy-radiogroup label span::before {
@@ -1636,9 +1635,44 @@ footer {
         height: 24px;
         width: 24px;
         margin-right: 10px;
-        transition: all 0.2s linear;
+        transition: all 0.1s linear;
         vertical-align: middle; }
     .svy-radiogroup label:hover span::before {
+      border: 6px solid #9dbf21;
+      margin-right: 10px; }
+
+.svy-checkgroup {
+  margin: 0;
+  padding: 0; }
+  .svy-checkgroup label.svy-check-radio {
+    position: relative; }
+    .svy-checkgroup label.svy-check-radio [type='checkbox'] {
+      position: absolute;
+      visibility: hidden; }
+      .svy-checkgroup label.svy-check-radio [type='checkbox']:checked ~ span::before {
+        margin-right: 10px;
+        border: 12px solid #9dbf21 !important;
+        background: #fff; }
+    .svy-checkgroup label.svy-check-radio span {
+      padding: 10px 0;
+      color: #333333;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.1s linear;
+      display: inline-block;
+      vertical-align: middle; }
+      .svy-checkgroup label.svy-check-radio span::before {
+        display: inline-block;
+        content: '' !important;
+        font-size: 0;
+        border: 6px solid #37a5e9;
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+        transition: all 0.1s linear;
+        vertical-align: middle; }
+    .svy-checkgroup label.svy-check-radio:hover span::before {
       border: 6px solid #9dbf21;
       margin-right: 10px; }
 

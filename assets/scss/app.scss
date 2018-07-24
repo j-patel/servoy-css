@@ -95,14 +95,14 @@ footer {
         margin: 0;
         color: black;
         font-size: 12px;
-        text-align: center;
+        text-align: center; 
 
         a {
             font-weight: 500;
             color: $green;
         }
     }
-}
+} 
 
 
 /** UI Elements **/
@@ -110,4 +110,5 @@ footer {
 @import "forms";
 @import "tabs";
 @import "radiogroup";
+@import "checkgroup";
 @import "responsive";

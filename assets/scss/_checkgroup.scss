@@ -1,11 +1,11 @@
-.svy-radiogroup {
+.svy-checkgroup {
     margin: 0;
     padding: 0;
 
-    label {
+    label.svy-check-radio {
         position: relative;
 
-        [type='radio'] {
+        [type='checkbox'] {
             position: absolute;
             visibility: hidden;
 
@@ -34,11 +34,11 @@
                 content: '' !important;
                 font-size: 0;
                 border: 6px solid $blue;
-                border-radius: 50%;
+                //border-radius: 50%;
                 height: 24px;
                 width: 24px;
                 margin-right: 10px;
-                transition: all $animDuration linear;
+                transition: all $animDuration linear; 
                 vertical-align: middle;
             }
         }
