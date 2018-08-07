@@ -74,6 +74,13 @@
         padding: 30px;
         border-bottom-left-radius: $borderRadius;
         border-bottom-right-radius: $borderRadius;
+        min-height: calc(100vh - 133px);
+
+        .tab-pane {
+            & > [sablo-tabseq-config="{container: true}"] {
+                //position: relative !important;
+            }
+        }
 
         ul {
             list-style: none;
