@@ -212,9 +212,9 @@ footer {
       color: #9dbf21; }
 
 /** UI Elements **/
-.svy-btn {
+.svy-button {
   border: 1px solid #e4e4e4d1;
-  background-color: #37a5e9;
+  background-color: #9dbf21;
   color: white;
   font-size: 14px;
   padding: 10px 20px;
@@ -241,30 +241,30 @@ footer {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  -webkit-box-shadow: 0 3px 0 #178dd6;
-  -moz-box-shadow: 0 3px 0 #178dd6;
-  -ms-box-shadow: 0 3px 0 #178dd6;
-  -o-box-shadow: 0 3px 0 #178dd6;
-  box-shadow: 0 3px 0 #178dd6; }
-  .svy-btn.tiny {
+  -webkit-box-shadow: 0 3px 0 #799419;
+  -moz-box-shadow: 0 3px 0 #799419;
+  -ms-box-shadow: 0 3px 0 #799419;
+  -o-box-shadow: 0 3px 0 #799419;
+  box-shadow: 0 3px 0 #799419; }
+  .svy-button.tiny {
     padding: 3px 7px; }
-    .svy-btn.tiny span {
+    .svy-button.tiny span {
       font-size: 10px; }
-  .svy-btn.small {
+  .svy-button.small {
     padding: 5px 10px;
     font-size: 12px; }
-    .svy-btn.small span {
+    .svy-button.small span {
       font-size: 12px; }
-  .svy-btn.large {
+  .svy-button.large {
     padding: 15px 30px; }
-  .svy-btn.expand {
+  .svy-button.expand {
     display: block;
     width: 100%; }
-  .svy-btn:hover, .svy-btn:focus {
-    color: #37a5e9;
+  .svy-button:hover, .svy-button:focus {
+    color: #9dbf21;
     background-color: white;
-    border-color: #209be6; }
-    .svy-btn:hover:after, .svy-btn:focus:after {
+    border-color: #8ba91d; }
+    .svy-button:hover:after, .svy-button:focus:after {
       box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
       position: absolute;
       top: 0;
@@ -273,8 +273,8 @@ footer {
       bottom: 0;
       content: '';
       display: none; }
-  .svy-btn:active {
-    background-color: #178dd6;
+  .svy-button:active {
+    background-color: #799419;
     color: white;
     position: relative;
     top: 3px;
@@ -288,35 +288,35 @@ footer {
     -ms-transition: 0.15s all ease;
     -o-transition: 0.15s all ease;
     transition: 0.15s all ease; }
-  .svy-btn.svy-btn-success {
-    background-color: #9dbf21;
-    -webkit-box-shadow: 0 3px 0 #799419;
-    -moz-box-shadow: 0 3px 0 #799419;
-    -ms-box-shadow: 0 3px 0 #799419;
-    -o-box-shadow: 0 3px 0 #799419;
-    box-shadow: 0 3px 0 #799419; }
-    .svy-btn.svy-btn-success:hover, .svy-btn.svy-btn-success:focus {
-      color: #9dbf21;
+  .svy-button.success {
+    background-color: #37a5e9;
+    -webkit-box-shadow: 0 3px 0 #178dd6;
+    -moz-box-shadow: 0 3px 0 #178dd6;
+    -ms-box-shadow: 0 3px 0 #178dd6;
+    -o-box-shadow: 0 3px 0 #178dd6;
+    box-shadow: 0 3px 0 #178dd6; }
+    .svy-button.success:hover, .svy-button.success:focus {
+      color: #37a5e9;
       background-color: white;
-      border-color: #8ba91d; }
-    .svy-btn.svy-btn-success:active {
-      background-color: #799419;
+      border-color: #209be6; }
+    .svy-button.success:active {
+      background-color: #178dd6;
       color: white; }
-  .svy-btn.svy-btn-secondary {
+  .svy-button.secondary {
     background-color: #0b4278;
     -webkit-box-shadow: 0 3px 0 #072849;
     -moz-box-shadow: 0 3px 0 #072849;
     -ms-box-shadow: 0 3px 0 #072849;
     -o-box-shadow: 0 3px 0 #072849;
     box-shadow: 0 3px 0 #072849; }
-    .svy-btn.svy-btn-secondary:hover, .svy-btn.svy-btn-secondary:focus {
+    .svy-button.secondary:hover, .svy-button.secondary:focus {
       color: #0b4278;
       background-color: white;
       border-color: #093561; }
-    .svy-btn.svy-btn-secondary:active {
+    .svy-button.secondary:active {
       color: white;
       background-color: #072849; }
-  .svy-btn.svy-btn-warning {
+  .svy-button.warning {
     background-color: #ecda00;
     color: black;
     -webkit-box-shadow: 0 3px 0 #d8c700;
@@ -324,28 +324,28 @@ footer {
     -ms-box-shadow: 0 3px 0 #d8c700;
     -o-box-shadow: 0 3px 0 #d8c700;
     box-shadow: 0 3px 0 #d8c700; }
-    .svy-btn.svy-btn-warning:hover, .svy-btn.svy-btn-warning:focus {
+    .svy-button.warning:hover, .svy-button.warning:focus {
       color: #b9ab00;
       background-color: white;
       border-color: #e2d100; }
-    .svy-btn.svy-btn-warning:active {
+    .svy-button.warning:active {
       color: black;
       background-color: #d8c700; }
-  .svy-btn.svy-btn-error {
+  .svy-button.error {
     background-color: #bd0000;
     -webkit-box-shadow: 0 3px 0 #8a0000;
     -moz-box-shadow: 0 3px 0 #8a0000;
     -ms-box-shadow: 0 3px 0 #8a0000;
     -o-box-shadow: 0 3px 0 #8a0000;
     box-shadow: 0 3px 0 #8a0000; }
-    .svy-btn.svy-btn-error:hover, .svy-btn.svy-btn-error:focus {
+    .svy-button.error:hover, .svy-button.error:focus {
       color: #bd0000;
       background-color: white;
       border-color: #a40000; }
-    .svy-btn.svy-btn-error:active {
+    .svy-button.error:active {
       color: white;
       background-color: #8a0000; }
-  .svy-btn .badge {
+  .svy-button .badge {
     width: 22px;
     height: 22px;
     border-radius: 30px;
@@ -358,16 +358,10 @@ footer {
     font-size: 12px !important;
     margin-left: 3px; }
 
-.svy-wrapper.expand {
-  flex-wrap: wrap; }
-  .svy-wrapper.expand *:not(span) {
-    flex-shrink: 0;
-    display: block;
-    width: 100%; }
-  .svy-wrapper.expand input, .svy-wrapper.expand select {
-    margin: 0 0 20px 0; }
-    .svy-wrapper.expand input ~ .svy-btn, .svy-wrapper.expand select ~ .svy-btn {
-      margin: 0px 0 20px 0px; }
+.svy-wrapper.expand input, .svy-wrapper.expand select {
+  margin: 0 0 20px 0; }
+  .svy-wrapper.expand input ~ .svy-button, .svy-wrapper.expand select ~ .svy-button {
+    margin: 0px 0 20px 0px; }
 .svy-wrapper .ng-isolate-scope {
   max-width: 100%; }
 .svy-wrapper .input-group {
@@ -376,7 +370,7 @@ footer {
   font-size: 14px;
   font-weight: 500;
   margin: 0 5px 5px 0;
-  display: inline-block; }
+  display: block; }
 .svy-wrapper textarea {
   background-color: white;
   color: black;
@@ -473,7 +467,7 @@ footer {
     -o-transition: 0.1s all ease;
     transition: 0.1s all ease;
     border: 2px solid #65baee; }
-.svy-wrapper input ~ .svy-btn {
+.svy-wrapper input ~ .svy-button {
   margin: 0 0 0 10px; }
 .svy-wrapper select {
   background-color: white;
@@ -581,18 +575,27 @@ footer {
   padding: 30px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  min-height: calc(100vh - 133px); }
-  .svy-tabpanel .tab-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .svy-tabpanel .tab-content ul li {
-      display: none; }
-      .svy-tabpanel .tab-content ul li.active {
-        display: block; }
-      .svy-tabpanel .tab-content ul li div p {
-        font-size: 14px;
-        line-height: 20px; }
+  min-height: calc(100vh - 133px);
+        /* ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                div {
+                    p {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }*/ }
 
 .rexpert-radioset {
   margin: 0;
@@ -683,21 +686,10 @@ footer {
       min-width: 0;
       max-width: 100vw; }
 
-  .svy-wrapper {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap; }
-    .svy-wrapper *:not(span) {
-      flex-shrink: 0;
-      display: block;
-      width: 100%;
-      overflow: auto;
-      height: 100%; }
-    .svy-wrapper input, .svy-wrapper select {
-      margin: 0 0 20px 0; }
-      .svy-wrapper input ~ .svy-btn, .svy-wrapper select ~ .svy-btn {
-        margin: 0px 0 20px 0px; }
+  .svy-wrapper input, .svy-wrapper select {
+    margin: 0 0 20px 0; }
+    .svy-wrapper input ~ .svy-button, .svy-wrapper select ~ .svy-button {
+      margin: 0px 0 20px 0px; }
 
   .svy-tabpanel .tab-content {
     margin-top: -2px; }

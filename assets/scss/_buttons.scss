@@ -1,6 +1,6 @@
-﻿.svy-btn {
+﻿.svy-button {
     border: 1px solid #e4e4e4d1;
-    background-color: $blue;
+    background-color: $green;
     color: white;
     font-size: $fontSize;
     padding: 10px 20px;
@@ -20,7 +20,7 @@
 
     @include vendorize(transition,.15s all ease);
     @include vendorize(appearance,none);
-    @include vendorize(box-shadow, 0 $buttonDepth 0 darken($blue, 10));
+    @include vendorize(box-shadow, 0 $buttonDepth 0 darken($green, 10));
 
     &.tiny {
         padding: 3px 7px;
@@ -49,9 +49,9 @@
     }
 
     &:hover, &:focus {
-        color: $blue;
+        color: $green;
         background-color: white;
-        border-color: darken($blue, 5);
+        border-color: darken($green, 5);
 
         &:after {
             box-shadow: 0 1px 4px rgba(15, 15, 15, 0.25);
@@ -66,7 +66,7 @@
     }
 
     &:active {
-        background-color: darken($blue, 10);
+        background-color: darken($green, 10);
         color: white;
         position: relative;
         top: $buttonDepth;
@@ -74,23 +74,23 @@
         @include vendorize(transition,.15s all ease);
     }
 
-    &.svy-btn-success {
-        background-color: $green;
-        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($green, 10));
+    &.success {
+        background-color: $blue;
+        @include vendorize(box-shadow, 0 $buttonDepth 0 darken($blue, 10));
 
         &:hover, &:focus {
-            color: $green;
+            color: $blue;
             background-color: white;
-            border-color: darken($green, 5);
+            border-color: darken($blue, 5);
         }
 
         &:active {
-            background-color: darken($green, 10);
+            background-color: darken($blue, 10);
             color: white;
         }
     }
 
-    &.svy-btn-secondary {
+    &.secondary {
         background-color: $darkBlue;
         @include vendorize(box-shadow, 0 $buttonDepth 0 darken($darkBlue, 10));
 
@@ -106,7 +106,7 @@
         }
     }
 
-    &.svy-btn-warning {
+    &.warning {
         background-color: $yellow;
         color: black;
         @include vendorize(box-shadow, 0 $buttonDepth 0 darken($yellow, 4));
@@ -123,7 +123,7 @@
         }
     }
 
-    &.svy-btn-error {
+    &.error {
         background-color: $red;
         @include vendorize(box-shadow, 0 $buttonDepth 0 darken($red, 10));
 

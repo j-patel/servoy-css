@@ -5,18 +5,11 @@
 
 .svy-wrapper {
     &.expand {
-        flex-wrap: wrap;
-
-        *:not(span) {
-            flex-shrink: 0;
-            display: block;
-            width: 100%;
-        }
 
         input, select {
             margin: 0 0 20px 0;
 
-            & ~ .svy-btn {
+            & ~ .svy-button {
                 margin: 0px 0 20px 0px;
             }
         }
@@ -34,7 +27,7 @@
         font-size: $fontSize;
         font-weight: 500;
         margin: 0 5px 5px 0;
-        display: inline-block;
+        display: block;
     }
 
     textarea {
@@ -128,7 +121,7 @@
             }
         }
 
-        & ~ .svy-btn {
+        & ~ .svy-button {
             margin: 0 0 0 10px;
         }
     }
